@@ -1474,5 +1474,10 @@ padding: 0;
 .line .item:hover{
 
     background: linear-gradient(0deg, rgb(42, 137, 219) -100%, rgba(152, 195, 232, 0%)100%);
-   
+  
+}
+.line .item2:hover{
+
+    background: linear-gradient(0deg, rgb(42, 137, 219) -100%, rgba(152, 195, 232, 0%)100%);
+  
 }
