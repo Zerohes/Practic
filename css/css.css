@@ -73,6 +73,7 @@ body {
     line-height: 23px;
 }
 
+
 #btn {
     margin: 0px 0px 0px 212px;
     border-radius: 10px;
@@ -87,6 +88,7 @@ body {
 #btn:hover {
     transition: 2s;
     background: linear-gradient(0deg, rgb(42, 137, 219) -100%, rgba(152, 195, 232, 0%)100%);
+    cursor: pointer;
 }
 
 .cards {
@@ -156,6 +158,9 @@ body {
 
     opacity: 0.6;
 }
+.card1-text2:hover {
+    color: #5A98D0;
+}
 
 .margin-card {
     margin-left: 48px;
@@ -177,6 +182,7 @@ body {
     margin-left: 50px;
     transition: 2s;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .more img {
@@ -480,6 +486,7 @@ p2 {
 #btn2:hover {
     transition: 2s;
     background: linear-gradient(0deg, rgb(42, 137, 219) -100%, rgba(152, 195, 232, 0%)100%);
+    cursor: pointer;
 }
 
 .border {

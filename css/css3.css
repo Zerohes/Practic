@@ -343,6 +343,7 @@ opacity: 0.8;
     #btn2:hover{
         transition: 2s;
         background: linear-gradient(0deg, rgb(42, 137, 219) -100%, rgba(152, 195, 232, 0%)100%);
+        cursor: pointer;
     }
 .fff{
     height: 865px;
@@ -1480,4 +1481,15 @@ padding: 0;
 
     background: linear-gradient(0deg, rgb(42, 137, 219) -100%, rgba(152, 195, 232, 0%)100%);
   
+}
+#search{
+    width: 940px;
+    height: 56px;
+    background: #F4F4F4;
+    border-radius: 10px;
+    border: none;
+}
+.news_pad:hover{
+    color:#356EAD;
+    cursor: pointer;
 }
