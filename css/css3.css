@@ -172,7 +172,7 @@ h4{
     display: flex;
     margin-left:auto;
     width: auto;
-    max-width: 1105px;
+    max-width: 1235px;
     padding-left: 20px
 }
 .news{
@@ -280,9 +280,9 @@ opacity: 0.4;
     max-width: 350px;
 }
 #cart2{
-    width: auto;
-    height: auto;
-    max-width: 200px;
+    width: 300px;
+    height: 200px;
+    
 }
 
 .news_s{
@@ -291,9 +291,9 @@ opacity: 0.4;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
         grid-template-rows: 540px;
-        column-gap: 15px;
+        column-gap:75px;
         row-gap: 20px;
-        
+  
         max-width: 1120px;
         padding-left: 20px;
     }
@@ -595,7 +595,7 @@ opacity: 0.8;
     }
 
     h4{
-        margin-left:190px;
+           max-width: 1265px;
     }
     .news{
     margin-left:50px;
