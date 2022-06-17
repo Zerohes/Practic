@@ -39,7 +39,7 @@ body {
 
 
 .title {
-    width: 1310px;
+    width: auto;
     height: 250px;
     background-image: url("../img/back_us.png");
 }
@@ -123,9 +123,11 @@ h1 {
     text-align: center;
 
 }
+
 .search{
 
-    width: 940px;
+    width: auto;
+    max-width: 900px;
     height: 56px;
     display: flex;
     margin: 70px auto;
@@ -167,15 +169,24 @@ opacity: 0.6;
     opacity: 0.8;
 }
 h4{
-    margin-left:213px;
+    display: flex;
+    margin-left:auto;
+    width: auto;
+    max-width: 1105px;
+    padding-left: 20px
 }
 .news{
-margin-left:213px;
+    padding-left: 20px;
+    width: auto;
+    max-width: 1090px;
+margin:0 20px 0 auto;
     display: grid;
-    grid-template-columns: 381px 590px;
-    grid-template-rows: 380px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+
 }
 .Galien_title{
+    width: auto;
     font-family: 'Galien';
 font-style: italic;
 font-weight: 700;
@@ -192,6 +203,7 @@ color: #1F3F68;
 
 
 .news_text{
+    width: auto;
     font-family: 'Gilroy';
 font-style: normal;
 font-weight: 400;
@@ -226,9 +238,23 @@ color: #1F3F68;
     display: flex;
     
 }
-.line .item{
+.line .item {
     margin: 0 32px 0 70px;
+    width: auto;
+    height: auto;
 }
+.item {
+max-width: 20px;
+max-height: 20px;
+    width: auto;
+    height: auto;
+}
+.item2 {
+    max-width: 20px;
+    max-height: 20px;
+        width: auto;
+        height: auto;
+    }
 
 .news_time{
     font-family: 'Gilroy';
@@ -246,12 +272,30 @@ color: #1F3F68;
 
 opacity: 0.4;
 }
+
+
+#cart{
+    width: auto;
+    height: auto;
+    max-width: 350px;
+}
+#cart2{
+    width: auto;
+    height: auto;
+    max-width: 200px;
+}
+
 .news_s{
-    margin:20px 0 0 213px;
+    
+    margin:20px 0 0 auto;
         display: grid;
-        grid-template-columns: 300px 300px 300px;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
         grid-template-rows: 540px;
-        column-gap: 20px;
+        column-gap: 15px;
+        row-gap: 20px;
+        
+        max-width: 1120px;
+        padding-left: 20px;
     }
 .news_s_title{
     font-family: 'Galien';
@@ -274,6 +318,7 @@ color: #1F3F68;
     font-size: 16px;
     line-height: 26px;
 
+
     
     letter-spacing: 0.04em;
     
@@ -286,7 +331,7 @@ p.nes_s_text.news_pad{
     padding-left: 20px;
 }
 .news_end{
-    width: 1150px;
+    width: auto;
     font-family: 'Gilroy';
 font-size: 16px;
 line-height: 20px;
@@ -302,24 +347,33 @@ color: #356EAD;
 opacity: 0.8;
 }
 .border2{
-    margin: 24px auto;
-    width: 940px;
+    margin: 24px 100px 0 0;
+    width: auto;
     border: solid 1px rgba(0, 0, 0, 0.2)
     ;
     
 }
 .all_article{
-    margin:20px 0 0 213px;
+    max-width: 1105px;
+    margin:20px auto 0 auto;
+    padding-left: 20px;
+    padding-right: 80px;
         display: grid;
-        grid-template-columns: 300px 700px ;
-        grid-template-rows: 200px 200px 200px 200px;
-        column-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+        grid-template-rows: 220px 220px 220px 220px;
+       ;
         row-gap: 32px;
     }
+
+
+
+
+
 .arrows{
     display: flex;
-    width: 980px;
+    width: auto;
     justify-content: space-between;
+    padding-right: 20px;
    
 }
 #end{
@@ -327,156 +381,188 @@ opacity: 0.8;
     display: flex; 
 }
 
-
-
-#btn2{
-    margin: 30px 0px 0px 100px;
-    border-radius: 10px;
-    border: none;
-    font-family: 'Gilroy';
-    color: #FFFFFF;
-    background: #5A98D0;
-    width: 220px;
-    height: 56px;
-    } 
-
-    #btn2:hover{
-        transition: 2s;
-        background: linear-gradient(0deg, rgb(42, 137, 219) -100%, rgba(152, 195, 232, 0%)100%);
-        cursor: pointer;
+    #btn2{
+        margin: 30px 10px 20px 50px;
+        border-radius: 10px;
+        border: none;
+        font-family: 'Gilroy';
+        color: #FFFFFF;
+        background: #5A98D0;
+        width: auto;
+        max-width: 200px;
+        padding: 0 30px;
+      
+        height: 56px;
+        } 
+    
+        #btn2:hover{
+            transition: 2s;
+            background: linear-gradient(0deg, rgb(42, 137, 219) -100%, rgba(152, 195, 232, 0%)100%);
+            cursor: pointer;
+        }
+    .fff{
+        height: auto;
+        width: auto;
+        background: #316099;
+       border-radius: 0 200px 0 0;
+     
     }
-.fff{
-    height: 865px;
-    width: 1200px;
-    background: #316099;
-   border-radius: 0 200px 0 0;
- 
-}
-.footer-text1{
-    font-family: 'Gilroy';
-font-size: 36px;
-line-height: 46px;
-
-margin: 90px 0 0 0;
-letter-spacing: 0.05em;
-margin-left: 213px;
-
-font-weight: bold;
-color: #FFFFFF;
-}
-.footer-text2{
-    text-align: left;
-    margin: 0px 0 0 0;
-    font-family: 'Gilroy';
-font-size: 16px;
-line-height: 26px;
-
-
-letter-spacing: 0.05em;
-
-
-
-color: #FFFFFF;
-
-opacity: 0.6;
-}
-.footer2 {
-    margin-top: 102px;
-    display: grid;
-    grid-template-columns: 650px 550px;
-    grid-template-rows:170px 270px ;
-
-   border-radius: 200px 0 0 0;
-}
-p2{
-    width: 400px;
-    margin: 20px 0 0 220px!important;    
-  
-}
-.logo-text{
-    margin-top: 20px;
-    margin-left: 20px;
-    font-family: 'Gilroy';
-    font-size: 28px;
+    .footer-text1{
+        font-family: 'Gilroy';
+    font-size: 36px;
     line-height: 46px;
-   
     
-    letter-spacing: 0.02em;
+    margin: 20px 0 0 0;
+    letter-spacing: 0.05em;
+    margin-left: 50px;
     
+    font-weight: bold;
     color: #FFFFFF;
-}
-.line1 img{
-    width: 100px;
-    height: 100px;
-}
-.logo-text2{
-    text-align: left;
-    margin: 40px 0 0 0px;
-    font-family: 'Gilroy';
-font-size: 20px;
-line-height: 30px;
-
-
-letter-spacing: 0.05em;
-
-
-
-color: #FFFFFF;
-}
-.border{
-    width: 1000px;
-    border: 1px solid #ffff;
-}
-
-
-
-p1{
-    margin: 0;    
-   grid-column: span 2;
-   }
-pf{
-    font-family: 'Gilroy';
+    }
+    .footer-text2{
+        text-align: left;
+        margin: 0px 0 0 0;
+        font-family: 'Gilroy';
     font-size: 16px;
     line-height: 26px;
-
+    
     
     letter-spacing: 0.05em;
     
     
-
+    
     color: #FFFFFF;
     
-    opacity: 0.4;
-    margin-left: 40px;
-}
-.contact{
+    opacity: 0.6;
+    }
+    .footer2 {
+        margin-top: 102px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows:170px 120px   ;
+        column-gap: 10px;
     
-    margin-left: 40px;
-    row-gap: 20px;
-    column-gap: 120px;
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 90px 40px 40px  40px 40px;
-   
+       border-radius: 200px 0 0 0;
+    }
+    p2{
+        width: auto;
+        margin: 20px 150px 0 50px!important;    
+        grid-column: span 2;
+    }
+    .logo-text{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-family: 'Gilroy';
+        font-size: 28px;
+        line-height: 46px;
+      
+        
+        letter-spacing: 0.02em;
+        
+        color: #FFFFFF;
+    }
+    .line1 img{
+        width: 100px;
+        height: 100px;
+    }
+    .logo-text2{
+        text-align: left;
+        margin: 40px 0 0 0px;
+        font-family: 'Gilroy';
+    font-size: 20px;
+    line-height: 30px;
+    
+    
+    letter-spacing: 0.05em;
+    
+    
+    
+    color: #FFFFFF;
+    }
+    .border{
+        width: auto;
+        margin-right: 100px;
+        border: 1px solid #ffff;
+    }
+    
+    
+    
+    p1{
+        margin: 0;
+        width: 450px;    
+       
+       }
+    pf{
+        font-family: 'Gilroy';
+        font-size: 16px;
+        line-height: 26px;
+    
+        
+        letter-spacing: 0.05em;
+        
+    
+    
+        color: #FFFFFF;
+        
+        opacity: 0.4;
+        margin-left: 40px;
+    }
+    
+    
+    
+    
+    .contact{
+        
+        margin-left: 40px;
+        row-gap: 20px;
+        column-gap: 55px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows :repeat(auto-fit, minmax(120px, 1fr));
+        grid-auto-flow: dense;
+    
+    }
+    
+    
+    @media(max-width:710px)  {
+        .contact{
+        
+            margin-left: 40px;
+            row-gap: 20px;
+            column-gap: 55px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            grid-template-rows :repeat(auto-fit, minmax(120px, 1fr));
+            grid-auto-flow: dense;
+        
+        }
+    }
+    @media(max-width:580px)  {
+        #articles{
+            width: 465px;
+        }
+        
+        .arrows{
+            display: flex;
+            width: 450px;
+            justify-content: space-between;
+            padding-right: 20px;
+           
+        }
+    }
+    
+    
+    .footer .footer-text2{
+        margin-top: 90px;
+    }
 
-}
-.footer .footer-text2{
-    margin-top: 90px;
-}
-.Galien_title{
-    font-family: 'Galien';
-font-style: italic;
-font-weight: 700;
-font-size: 48px;
-line-height: 58px;
-
-
-letter-spacing: 0.04em;
 
 
 
-color: #1F3F68;
-}
+
+
+
+
 @media(max-width:500px){
     .start-g {
         z-index: 100;
@@ -496,86 +582,7 @@ color: #1F3F68;
         height: 250px;
         background-image: url("../img/back_us.png");
     }
-    
-    .Gilroy_white {
-        font-family: 'Gilroy';
-        font-size: 44px;
-        line-height: 74px;
-        font-weight: 600;
-       
-        letter-spacing: 0.04em;
-        color: #FFFFFF;
-    }
-    
-    .Gilroy_blue {
-        color: #1F3F68;
-        font-family: 'Gilroy';
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: bold;
-    
-    
-    }
-    
-    .Gilroy_blue_regular {
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-       
-    
-        letter-spacing: 0.04em;
-    
-      
-    
-        color: #1F3F68;
-    
-        opacity: 0.8;
-    }
-    
-    
-    
-    
-    .Gilroy_blue_op {
-    
-        font-family: 'Gilroy';
-        font-size: 16px;
-        line-height: 26px;
-  
-    
-        letter-spacing: 0.05em;
-    
-      
-    
-        color: #1F3F68;
-    
-        opacity: 0.6;
-    }
-    
-    .p-title {
-        width: auto;
-        height: 60px;
-    
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-     
-    
-        text-align: center;
-        letter-spacing: 0.04em;
-    
-        color: rgba(255, 255, 255, 0.6);
-    
-        opacity: 0.2;
-    }
-    
-    h1 {
-        text-align: center;
-    
-    }
+
     .search{
     
         width: 450px;
@@ -586,39 +593,7 @@ color: #1F3F68;
         border-radius: 10px;
         align-items: center;
     }
-    
-    
-    
-    .search img{
-        margin: 0 20px;
-        width: 24px;
-        height: 24px;
-    }
-    .Gilroy_search{
-        font-family: 'Gilroy';
-    font-size: 16px;
-    line-height: 19px;
-    
-  
-    
-    color: #1F3F68;
-    
-    opacity: 0.6;
-    }
-    .Gilroy_f20{
-        font-family: 'Gilroy';
-        font-size: 20px;
-        line-height: 25px;
-      
-        
-        letter-spacing: 0.04em;
-        font-weight: bold;
-      
-        
-        color: #356EAD;
-        
-        opacity: 0.8;
-    }
+
     h4{
         margin-left:190px;
     }
@@ -628,78 +603,7 @@ color: #1F3F68;
         grid-template-columns: 400px;
         grid-template-rows: 380px;
     }
-   
-    .Galien_title{
-        font-family: 'Galien';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-   
-    letter-spacing: 0.04em;
-    
-   
-    
-    color: #1F3F68;
-    }
-    
-    
-    
-    .news_text{
-        font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
 
-    
-    letter-spacing: 0.04em;
-    
-    color: #000000;
-    
-    opacity: 0.6;
-    }
-    .news_pad{
-        padding-top: 30px;
-    }
-    .news_author{
-        font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-   
-    
-    letter-spacing: 0.04em;
-    
-  
-    
-    color: #1F3F68;
-    }
-    .line{
-        display: flex;
-        
-    }
-    .line .item{
-        margin: 0 32px 0 70px;
-    }
-    
-    .news_time{
-        font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-
-    
-    letter-spacing: 0.04em;
-    
-  
-    
-    color: #1F3F68;
-    
-    opacity: 0.4;
-    }
     .news_s{
         margin:40px 0 0 50px;
             display: grid;
@@ -707,57 +611,13 @@ color: #1F3F68;
             grid-template-rows: 540px;
             column-gap: 20px;
         }
-        
-    .news_s_title{
-        font-family: 'Galien';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-   
-    
-    letter-spacing: 0.04em;
-    
-  
-    
-    color: #1F3F68;
-    }
-    .nes_s_text{
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-       
-        
-        letter-spacing: 0.04em;
-        
-        color: rgba(0, 0, 0, 0.6);
-    }
-    p.nes_s_text.news_pad{
-        padding-top: 15px;
-    }
+
+
+
     .main_p{
         padding-left: 0px;
     }
- 
-    .news_end{
-        width: 1150px;
-        font-family: 'Gilroy';
-    font-size: 16px;
-    line-height: 20px;
-   
-    
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    
-   
-    
-    color: #356EAD;
-    
-    opacity: 0.8;
-    }
+
     .border2{
         margin: 24px auto;
         width:400px;
@@ -766,12 +626,15 @@ color: #1F3F68;
         
     }
     .all_article{
-        margin:20px 0 0 100px;
+        margin:20px 0 0 40px;
             display: grid;
             grid-template-columns: 300px ;
             grid-template-rows: 200px 400px 200px 400px 200px 400px 200px 400px 200px ;
             column-gap: 20px;
             row-gap: 32px;
+        }
+        #articles{
+            width: 400px;
         }
     .arrows{
         display: flex;
@@ -779,301 +642,24 @@ color: #1F3F68;
         justify-content: space-between;
        
     }
-    #end{
-        width: 120px;
-        display: flex; 
-    }
 
-    
-    
-    #btn2{
-        margin: 30px 0px 0px 100px;
-        border-radius: 10px;
-        border: none;
-        font-family: 'Gilroy';
-        color: #FFFFFF;
-        background: #5A98D0;
-        width: 220px;
-        height: 56px;
-        } 
-    
-    
-    .fff{
-        height: 865px;
-        width: 1200px;
-        background: #316099;
-       border-radius: 0 200px 0 0;
-     
-    }
-    .footer-text1{
-        font-family: 'Gilroy';
-    font-size: 36px;
-    line-height: 46px;
 
-    margin: 90px 0 0 0;
-    letter-spacing: 0.05em;
-    margin-left: 213px;
 
-    font-weight: bold;
-    color: #FFFFFF;
-    }
-    .footer-text2{
-        text-align: left;
-        margin: 0px 0 0 0;
-        font-family: 'Gilroy';
-    font-size: 16px;
-    line-height: 26px;
-
-    
-    letter-spacing: 0.05em;
-    
-   
-    
-    color: #FFFFFF;
-    
-    opacity: 0.6;
-    }
-    .footer2 {
-        margin-top: 102px;
-        display: grid;
-        grid-template-columns: 650px 550px;
-        grid-template-rows:170px 270px ;
-    
-       border-radius: 200px 0 0 0;
-    }
-    p2{
-        width: 400px;
-        margin: 20px 0 0 220px!important;    
-      
-    }
-    .logo-text{
-        margin-top: 20px;
-        margin-left: 20px;
-        font-family: 'Gilroy';
-        font-size: 28px;
-        line-height: 46px;
-       
-        
-        letter-spacing: 0.02em;
-        
-        color: #FFFFFF;
-    }
-    .line1 img{
-        width: 100px;
-        height: 100px;
-    }
-    .logo-text2{
-        text-align: left;
-        margin: 40px 0 0 0px;
-        font-family: 'Gilroy';
-    font-size: 20px;
-    line-height: 30px;
-   
-    
-    letter-spacing: 0.05em;
-    
-   
-    
-    color: #FFFFFF;
-    }
-    .border{
-        width: 1000px;
-        border: 1px solid #ffff;
-    }
-    
-    
-    
-    p1{
-        margin: 0;    
-       grid-column: span 2;
-       }
-    pf{
-        font-family: 'Gilroy';
-        font-size: 16px;
-        line-height: 26px;
-     
-        
-        letter-spacing: 0.05em;
-        
-
-    
-        color: #FFFFFF;
-        
-        opacity: 0.4;
-        margin-left: 40px;
-    }
-    .contact{
-        
-        margin-left: 40px;
-        row-gap: 20px;
-        column-gap: 120px;
-        display: grid;
-        grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 90px 40px 40px  40px 40px;
-       
-    
-    }
-    .footer .footer-text2{
-        margin-top: 90px;
-    }
-    .Galien_title{
-        font-family: 'Galien';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    
-    
-    letter-spacing: 0.04em;
-    
- 
-    
-    color: #1F3F68;
-    }
     #ad_pic1{
         width: 300px;
        height:300px;
     }
-    .fff{
-        height: 865px;
-        width: 1200px;
-        background: #316099;
-       border-radius: 0 200px 0 0;
-     
-    }
-    .footer-text1{
-        font-family: 'Gilroy';
-    font-size: 36px;
-    line-height: 46px;
- 
-    margin: 90px 0 0 0;
-    letter-spacing: 0.05em;
-    margin-left: 213px;
 
-    font-weight: bold;
-    color: #FFFFFF;
-    }
-    .footer-text2{
-        text-align: left;
-        margin: 0px 0 0 0;
-        font-family: 'Gilroy';
-    font-size: 16px;
-    line-height: 26px;
-  
-    
-    letter-spacing: 0.05em;
-    
-  
-    
-    color: #FFFFFF;
-    
-    opacity: 0.6;
-    }
-    .footer2 {
-        margin-top: 102px;
-        display: grid;
-        grid-template-columns: 650px 550px;
-        grid-template-rows:170px 270px ;
-    
-       border-radius: 200px 0 0 0;
-    }
-    p2{
-        width: 400px;
-        margin: 20px 0 0 220px!important;    
-      
-    }
-    .logo-text{
-        margin-top: 20px;
-        margin-left: 20px;
-        font-family: 'Gilroy';
-        font-size: 28px;
-        line-height: 46px;
-  
-        
-        letter-spacing: 0.02em;
-        
-        color: #FFFFFF;
-    }
-    .line1 img{
-        width: 100px;
-        height: 100px;
-    }
-    .logo-text2{
-        text-align: left;
-        margin: 40px 0 0 0px;
-        font-family: 'Gilroy';
-    font-size: 20px;
-    line-height: 30px;
+
+
+
+
 
     
-    letter-spacing: 0.05em;
-    
-  
-    
-    color: #FFFFFF;
-    }
-    .border{
-        width: 1000px;
-        border: 1px solid #ffff;
-    }
-    
-    
-    
-    p1{
-        margin: 0;    
-       grid-column: span 2;
-       }
-    pf{
-        font-family: 'Gilroy';
-        font-size: 16px;
-        line-height: 26px;
-       
-        
-        letter-spacing: 0.05em;
-        
-  
-    
-        color: #FFFFFF;
-        
-        opacity: 0.4;
-        margin-left: 40px;
-    }
-    .contact{
-        
-        margin-left: 40px;
-        row-gap: 20px;
-        column-gap: 120px;
-        display: grid;
-        grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 90px 40px 40px  40px 40px;
-       
-    
-    }
-    .footer .footer-text2{
-        margin-top: 90px;
-    }
-    .Galien_title{
-        font-family: 'Galien';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-   
-    
-    letter-spacing: 0.04em;
-    
- 
-    
-    color: #1F3F68;
-    }
-    #call{
-width: 300px;
-height:300px;
 
-    }
-    #ad{
-        width: 200px;
-    }
+
+
+
     .footer {
         margin-top: 52px;
         display: grid;
@@ -1086,7 +672,7 @@ height:300px;
         font-family: 'Gilroy';
     font-size: 18px;
     line-height: 46px;
-  
+
     margin: 90px 0 0 0;
     letter-spacing: 0.05em;
     margin-left: 73px;
@@ -1100,7 +686,7 @@ height:300px;
         font-family: 'Gilroy';
     font-size: 10px;
     line-height: 26px;
-   
+
     
     letter-spacing: 0.05em;
     
@@ -1148,11 +734,11 @@ height:300px;
         font-family: 'Gilroy';
         font-size: 20px;
         line-height: 46px;
-       
+      
         
         letter-spacing: 0.02em;
         font-weight: bold;
-  
+
         
         color: #F2F2F2;
     }
@@ -1163,8 +749,8 @@ height:300px;
     .footer2 {
         margin-top: 102px;
         display: grid;
-        grid-template-columns: 650px 550px;
-        grid-template-rows:170px 270px ;
+        grid-template-columns: auto auto;
+        grid-template-rows:170px 170px ;
     
        border-radius: 200px 0 0 0;
     }
@@ -1180,14 +766,15 @@ height:300px;
       
     }
     #btn2{
-        margin: 30px 0px 0px 100px;
+        
         border-radius: 10px;
         border: none;
         font-family: 'Gilroy';
         color: #FFFFFF;
         background: #5A98D0;
-        width: 220px;
+        width: 150px;
         height: 56px;
+        margin: 30px 10px 20px 75px;
         } 
     .border{
         width: 450px;
@@ -1199,7 +786,7 @@ height:300px;
         font-family: 'Gilroy';
         font-size: 12px;
         line-height: 46px;
-        
+  
         
         letter-spacing: 0.02em;
         
@@ -1209,21 +796,18 @@ height:300px;
         width: 22px;
         height: 22px;
     }
-    .line1 img{
-        width: 100px;
-        height: 100px;
-    }
+
     .logo-text2{
         text-align: left;
         margin: 40px 0 0 0px;
         font-family: 'Gilroy';
     font-size: 12px;
     line-height: 30px;
-   
+
     
     letter-spacing: 0.05em;
     
-  
+
     
     color: #FFFFFF;
     }
@@ -1236,11 +820,11 @@ height:300px;
         font-family: 'Gilroy';
         font-size: 10px;
         line-height: 26px;
-   
+
         
         letter-spacing: 0.05em;
         
-
+      
     
         color: #FFFFFF;
         
@@ -1258,10 +842,13 @@ height:300px;
        
     
     }
-    .footer .footer-text2{
-        margin-top: 90px;
-    }
+
+
 }
+
+
+
+
    
 #menu__toggle {
     visibility: hidden;
@@ -1493,3 +1080,8 @@ padding: 0;
     color:#356EAD;
     cursor: pointer;
 }
+
+
+
+
+

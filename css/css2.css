@@ -1,5 +1,6 @@
 html {
-    max-width: 1366px;
+    min-width: auto
+    ;
     padding: 0;
     margin: 0;
 }
@@ -36,7 +37,7 @@ body{
 
 
 .title{
-    width: 1310px;
+    width: auto ;
     height: 250px;
     background-image: url(../img/back_us.png);
 }
@@ -143,7 +144,7 @@ opacity: 0.2;
 .content {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 552px 662px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-rows: 840px ;
     justify-items: center;
   
@@ -152,7 +153,7 @@ opacity: 0.2;
 
 .block-g {
     display: grid;
-    grid-template-columns: 480px;
+    grid-template-columns: 394px;
     grid-template-rows: 40px 100px 40px 100px 40px 250px  70px  ;
     justify-items: left;
 
@@ -160,7 +161,7 @@ opacity: 0.2;
 }
 
 .block{
-    width: 540px;
+    width: 425px;
     height: 800px;
     background: #FFFFFF;
 box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
@@ -169,7 +170,7 @@ border-radius: 10px;
 
 }
 .margin-block{
-    margin: 0px 0 0 56px;
+    margin: 0px 0px 0 56px;
 }
 .btn-block{
     padding-left: 20px;
@@ -177,14 +178,14 @@ border-radius: 10px;
     opacity: 0.4;
     background: #FFFFFF;
 
-width: 428px;
+width: 315px;
 height: 72px;
 border: 1px solid #356EAD;
 border-radius: 10px;
 color: rgba(31, 63, 104, 0.4);
 }
 .btn-textbox{
-    width: 428px;
+    width: 315px;
 height: 182px;
 }
 .btn-submit{
@@ -195,7 +196,7 @@ line-height: 26px;
 font-weight: bold;
 text-align: center;
 letter-spacing: 0.04em;
-    width: 428px;
+width: 315px;
 
 background: #5A98D0;
 
@@ -215,21 +216,24 @@ border-radius: 10px;
 
 
 .map{
-margin: 0 auto ;
-    width: 940px;
+margin: 20px auto ;
+    width: 440px;
     height: 480px;
 }
 
 
 
 #btn2{
-    margin: 30px 0px 0px 100px;
+    margin: 40px 10px 20px 50px;
     border-radius: 10px;
     border: none;
     font-family: 'Gilroy';
     color: #FFFFFF;
     background: #5A98D0;
-    width: 220px;
+    width: auto;
+    max-width: 200px;
+    padding: 0 30px;
+  
     height: 56px;
     } 
 
@@ -239,8 +243,8 @@ margin: 0 auto ;
         cursor: pointer;
     }
 .fff{
-    height: 865px;
-    width: 1200px;
+    height: auto;
+    width: auto;
     background: #316099;
    border-radius: 0 200px 0 0;
  
@@ -250,9 +254,9 @@ margin: 0 auto ;
 font-size: 36px;
 line-height: 46px;
 
-margin: 90px 0 0 0;
+margin: 20px 0 0 0;
 letter-spacing: 0.05em;
-margin-left: 213px;
+margin-left: 50px;
 
 font-weight: bold;
 color: #FFFFFF;
@@ -276,15 +280,16 @@ opacity: 0.6;
 .footer2 {
     margin-top: 102px;
     display: grid;
-    grid-template-columns: 650px 550px;
-    grid-template-rows:170px 270px ;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows:170px 120px   ;
+    column-gap: 10px;
 
    border-radius: 200px 0 0 0;
 }
 p2{
-    width: 400px;
-    margin: 20px 0 0 220px!important;    
-  
+    width: auto;
+    margin: 20px 150px 0 50px!important;    
+    grid-column: span 2;
 }
 .logo-text{
     margin-top: 20px;
@@ -317,15 +322,17 @@ letter-spacing: 0.05em;
 color: #FFFFFF;
 }
 .border{
-    width: 1000px;
+    width: auto;
+    margin-right: 100px;
     border: 1px solid #ffff;
 }
 
 
 
 p1{
-    margin: 0;    
-   grid-column: span 2;
+    margin: 0;
+    width: 450px;    
+   
    }
 pf{
     font-family: 'Gilroy';
@@ -342,17 +349,38 @@ pf{
     opacity: 0.4;
     margin-left: 40px;
 }
+
+
+
+
 .contact{
     
     margin-left: 40px;
     row-gap: 20px;
-    column-gap: 120px;
+    column-gap: 55px;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 90px 40px 40px  40px 40px;
-   
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows :repeat(auto-fit, minmax(120px, 1fr));
+    grid-auto-flow: dense;
 
 }
+
+
+@media(max-width:710px)  {
+    .contact{
+    
+        margin-left: 40px;
+        row-gap: 20px;
+        column-gap: 55px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        grid-template-rows :repeat(auto-fit, minmax(120px, 1fr));
+        grid-auto-flow: dense;
+    
+    }
+}
+
+
 .footer .footer-text2{
     margin-top: 90px;
 }
@@ -389,106 +417,8 @@ color: #1F3F68;
         height: 250px;
         background-image: url(../img/back_us.png);
     }
-    .Gilroy_white{
-    font-family: 'Gilroy';
-    font-size: 44px;
-    line-height: 74px;
-    font-weight: 600;
- 
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    }
-    
-    h1{
-    text-align: center;
-    
-    }
-    .call img{
-    
-        margin-right: 10px;
-        width: 24px;
-        height: 24px;
-    }
-    .call{
-        margin-top: 10px;
-        display: flex;
-        height: 30px;
-        
-    
-    }
-    
-    
-    h2{
-        margin-top: 50px;
-    }
-    h3{
-        margin-top: 50px;
-        margin-left: 56px;
-    }
-    .Gilroy_blue{
-    color: #1F3F68;
-    font-family: 'Gilroy';
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: bold;
-    
-    
-    }
-    
-    .Gilroy_blue_regular{
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        
-        
-        letter-spacing: 0.04em;
-        
 
-        
-        color: #1F3F68;
-        
-        opacity: 0.8;
-    }
-    
-    
-    
-    
-    .Gilroy_blue_op{
-       
-        font-family: 'Gilroy';
-    font-size: 16px;
-    line-height: 26px;
 
-    
-    letter-spacing: 0.05em;
-    
-
-    
-    color: #1F3F68;
-    
-    opacity: 0.6;
-    }
-    
-    .p-title{
-        width: auto;
-    height: 60px;
-    
-        font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-  
-    
-    text-align: center;
-    letter-spacing: 0.04em;
-    
-    color: rgba(255, 255, 255, 0.6);
-    
-    opacity: 0.2;
-    }
     .content {
         margin: 50px 0 0 10px;
         display: grid;
@@ -518,9 +448,7 @@ color: #1F3F68;
     
     
     }
-    .margin-block{
-        margin: 0px 0 0 56px;
-    }
+
     .btn-block{
         padding-left: 20px;
         text-align: left;
@@ -539,20 +467,9 @@ color: #1F3F68;
     }
     .btn-submit{
         font-family: 'Gilroy';
-    font-size: 16px;
-    line-height: 26px;
- 
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 0.04em;
-        width: 200px;
- 
-    background: #5A98D0;
 
-    color: #FFFFFF;
-    border: none;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
+        width: 200px;
+
     }
     .map{
     margin: 20px auto ;
@@ -566,158 +483,18 @@ color: #1F3F68;
         width: 350px;
         height: 350px;
     }
-    
-    
-    #btn2{
-        margin: 30px 0px 0px 100px;
-        border-radius: 10px;
-        border: none;
-        font-family: 'Gilroy';
-        color: #FFFFFF;
-        background: #5A98D0;
-        width: 220px;
-        height: 56px;
-        } 
-    
-    
-    .fff{
-        height: 865px;
-        width: 1200px;
-        background: #316099;
-       border-radius: 0 200px 0 0;
-     
-    }
-    .footer-text1{
-        font-family: 'Gilroy';
-    font-size: 36px;
-    line-height: 46px;
 
-    margin: 90px 0 0 0;
-    letter-spacing: 0.05em;
-    margin-left: 213px;
 
-    font-weight: bold;
-    color: #FFFFFF;
-    }
-    .footer-text2{
-        text-align: left;
-        margin: 0px 0 0 0;
-        font-family: 'Gilroy';
-    font-size: 16px;
-    line-height: 26px;
-
-    
-    letter-spacing: 0.05em;
-    
-
-    
-    color: #FFFFFF;
-    
-    opacity: 0.6;
-    }
-    .footer2 {
-        margin-top: 102px;
-        display: grid;
-        grid-template-columns: 650px 550px;
-        grid-template-rows:170px 270px ;
-    
-       border-radius: 200px 0 0 0;
-    }
-    p2{
-        width: 400px;
-        margin: 20px 0 0 220px!important;    
-      
-    }
-    .logo-text{
-        margin-top: 20px;
-        margin-left: 20px;
-        font-family: 'Gilroy';
-        font-size: 28px;
-        line-height: 46px;
-    
-        
-        letter-spacing: 0.02em;
-        
-        color: #FFFFFF;
-    }
-    .line1 img{
-        width: 100px;
-        height: 100px;
-    }
-    .logo-text2{
-        text-align: left;
-        margin: 40px 0 0 0px;
-        font-family: 'Gilroy';
-    font-size: 20px;
-    line-height: 30px;
-
-    
-    letter-spacing: 0.05em;
-    
-
-    
-    color: #FFFFFF;
-    }
     .border{
         width: 1000px;
         border: 1px solid #ffff;
     }
     
-    
-    
-    p1{
-        margin: 0;    
-       grid-column: span 2;
-       }
-    pf{
-        font-family: 'Gilroy';
-        font-size: 16px;
-        line-height: 26px;
-     
-        
-        letter-spacing: 0.05em;
-        
-        
-    
-        color: #FFFFFF;
-        
-        opacity: 0.4;
-        margin-left: 40px;
-    }
-    .contact{
-        
-        margin-left: 40px;
-        row-gap: 20px;
-        column-gap: 120px;
-        display: grid;
-        grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 90px 40px 40px  40px 40px;
-       
-    
-    }
-    .footer .footer-text2{
-        margin-top: 90px;
-    }
-    .Galien_title{
-        font-family: 'Galien';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
 
-    
-    letter-spacing: 0.04em;
-    
-
-    color: #1F3F68;
-    }
     #call{
 width: 300px;
 height:300px;
 
-    }
-    #ad{
-        width: 200px;
     }
     .footer {
         margin-top: 52px;
@@ -754,13 +531,8 @@ height:300px;
     color: #FFFFFF;
     
     opacity: 0.6;
-    }
-    .ff{
-        width: 500px;
-        height: 1489px;
-        background: #5A98D0;
-       border-radius: 200px 0 0 0;
-    }
+    }   
+
     
     .fff{
         height: 865px;
@@ -808,8 +580,8 @@ height:300px;
     .footer2 {
         margin-top: 102px;
         display: grid;
-        grid-template-columns: 650px 550px;
-        grid-template-rows:170px 270px ;
+        grid-template-columns: auto auto;
+        grid-template-rows:170px 170px ;
     
        border-radius: 200px 0 0 0;
     }
@@ -825,14 +597,15 @@ height:300px;
       
     }
     #btn2{
-        margin: 30px 0px 0px 100px;
+        margin: 30px 0px 0px 0px;
         border-radius: 10px;
         border: none;
         font-family: 'Gilroy';
         color: #FFFFFF;
         background: #5A98D0;
-        width: 220px;
+        width: 150px;
         height: 56px;
+        margin: 30px 10px 20px 75px;
         } 
     .border{
         width: 450px;
@@ -854,10 +627,7 @@ height:300px;
         width: 22px;
         height: 22px;
     }
-    .line1 img{
-        width: 100px;
-        height: 100px;
-    }
+
     .logo-text2{
         text-align: left;
         margin: 40px 0 0 0px;
@@ -903,12 +673,67 @@ height:300px;
        
     
     }
-    .footer .footer-text2{
-        margin-top: 90px;
-    }
 
 }
 
+
+
+@media(max-width:870px){
+
+    .block-g {
+        display: grid;
+        grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: 40px 100px 40px 100px 40px 250px  70px  ;
+        justify-items: center;
+        align-items: center;
+
+    }
+    
+    .block{
+        width: auto;
+        height: 800px;
+        background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    
+    
+    }
+    .margin-block{
+        margin: 0px  56px 0 56px;
+    }
+    .btn-block{
+        padding-left: 20px;
+        text-align: left;
+        opacity: 0.4;
+        background: #FFFFFF;
+    
+    width: auto;
+    height: 72px;
+    border: 1px solid #356EAD;
+    border-radius: 10px;
+    color: rgba(31, 63, 104, 0.4);
+    }
+    .btn-textbox{
+        width: auto;
+    height: 182px;
+    }
+    .btn-submit{
+        font-family: 'Gilroy';
+
+    padding: 23px  56px 23px 56px;
+
+        width: auto;
+    
+    background: #5A98D0;
+    
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    }
+
+
+}
 
 #menu__toggle {
     visibility: hidden;
