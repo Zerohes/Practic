@@ -276,17 +276,12 @@ opacity: 0.4;
 
 
 #cart{
-    width: 500px;
+    width: 550px;
     height: 300px;
    
 }
-@media(max-width:1060px){
-    #cart{
-        width: 350px;
-        height: 300px;
-       
-    }
-}
+
+
 #cart2{
     width: 300px;
     height: 200px;
@@ -343,7 +338,7 @@ p.nes_s_text.news_pad{
     font-family: 'Gilroy';
 font-size: 16px;
 line-height: 20px;
-
+margin-top: 20px;
 
 text-align: right;
 letter-spacing: 0.04em;
@@ -377,19 +372,6 @@ opacity: 0.8;
 
 
 
-@media(max-width:1120px){
-.all_article{
-    max-width: 1105px;
-    margin:20px auto 0 auto;
-    padding-left: 20px;
-    padding-right: 80px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
-        grid-template-rows: 220px 220px 220px 220px;
-       ;
-        row-gap: 32px;
-    }
-}
 
 
 
@@ -620,10 +602,11 @@ opacity: 0.8;
     }
 
     h4{
+
         display: flex;
         margin-left:auto;
         width: auto;
-        max-width: 380px;
+        max-width: 360px;
         padding-left: 20px
     }
     .news{
@@ -634,13 +617,15 @@ opacity: 0.8;
     }
 
     .news_s{
-        margin:40px 0 0 50px;
+        margin:40px 50% 0 50% ;
             display: grid;
-            grid-template-columns: 300px ;
+            grid-template-columns: 310px ;
             grid-template-rows: 540px;
             column-gap: 20px;
+            justify-content: center;
+            
         }
-
+   
 
 
     .main_p{
@@ -1114,3 +1099,55 @@ padding: 0;
 
 
 
+@media(max-width:1150px){
+    #cart{
+        width: 450px;
+        height: 300px;
+       
+    }
+}
+
+
+@media(max-width:11220px){
+    .all_article{
+        max-width: 1105px;
+        margin:20px auto 0 65px;
+        padding-left: 20px;
+        padding-right: 80px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+            grid-template-rows: 220px 220px 220px 220px;
+           ;
+            row-gap: 32px;
+        }
+    }
+    
+
+
+
+@media(max-width:950px){
+    #cart{
+        width: 350px;
+        height: 300px;
+       
+    }
+}
+
+@media(max-width:745px){
+    #cart{
+        width: auto;
+        height: 300px;
+        padding-left: 0px; 
+        
+    }
+
+
+}
+@media(max-width:510px){
+    #cart{
+        width: 350px;
+        height: 300px;
+       
+    }
+
+}
